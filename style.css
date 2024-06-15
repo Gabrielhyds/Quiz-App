@@ -48,11 +48,10 @@
   }
   
   .answers-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajuste conforme necessário */
-    gap: 16px;
+    display: flex;
+    flex-wrap: wrap; /* Permite que os botões quebrem para a próxima linha se não houver espaço */
+    gap: 16px; /* Espaçamento entre os botões */
   }
-  
   
   .answer:disabled {
     cursor: not-allowed;
@@ -69,7 +68,7 @@
     font-weight: bold;
     border: 0;
     border-radius: 6px;
-    padding: 12px 24px; /* Ajuste o padding conforme necessário */
+    padding: 12px 20px; /* Ajuste o padding conforme necessário */
     width: auto; /* Largura automática baseada no conteúdo */
     height: auto; /* Altura automática baseada no conteúdo */
   
