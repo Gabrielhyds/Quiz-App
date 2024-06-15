@@ -108,3 +108,8 @@
   .incorrect {
     background-color: #a10101;
   }
+  @media (max-width: 600px) {
+    .button {
+      width: 100%; /* Para ocupar toda a largura do container pai em telas pequenas */
+    }
+  }
