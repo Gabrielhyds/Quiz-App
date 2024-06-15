@@ -147,7 +147,7 @@ const questions = [
     {
       question: "Ordene as memórias de forma decrescente segundo o tempo de acesso",
       answers: [
-        { text: "Disco magnético>Memória principal<br/>Cache>Registradores", correct: true },
+        { text: "Disco magnético>Memória principal>Cache>Registradores", correct: true },
         { text: "Registradores>Cache>Memória principal>Disco magnético", correct: false },
         { text: "Memória principal>Disco magnético>Cache>Registradores", correct: false },
         { text: "Cache>Registradores>Memória principal>Disco magnético", correct: false }
