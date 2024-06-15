@@ -48,11 +48,11 @@
   }
   
   .answers-container {
-    width: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); /* Ajuste conforme necessário */
     gap: 16px;
   }
+  
   
   .answer:disabled {
     cursor: not-allowed;
@@ -69,10 +69,9 @@
     font-weight: bold;
     border: 0;
     border-radius: 6px;
-    padding: 10px 20px; /* Ajuste o padding conforme necessário */
-    min-width: 150px; /* Tamanho mínimo inicial */
-    width: auto; /* Permitir que o botão se expanda conforme necessário */
-    height: auto; /* Ajusta automaticamente a altura com base no conteúdo */
+    padding: 12px 24px; /* Ajuste o padding conforme necessário */
+    width: auto; /* Largura automática baseada no conteúdo */
+    height: auto; /* Altura automática baseada no conteúdo */
   
     display: flex;
     justify-content: center;
